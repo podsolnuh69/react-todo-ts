@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-title {
+  margin: 15px 0 0 15px;
+  padding: 0 !important;
+  user-select: none;
+}
+
+.todoform-input {
+  margin-top: 2rem;
+}
