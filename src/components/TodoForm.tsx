@@ -1,12 +1,15 @@
 import React, { useRef } from 'react';
 
+interface TodoFromProps {
+    onAdd(title: string): void
+}
 
-const TodoForm: React.FC = () => {
+const TodoForm: React.FC<TodoFromProps> = (props) => {
     const ref = useRef<HTMLInputElement>(null);
 
     const keyPressHandler = (e: React.KeyboardEvent) => {
         if (e.key === 'Enter') {
-            console.log(ref.current!.value)
+            props.onAdd(ref.current!.value)
             ref.current!.value = '';
         }
     }
