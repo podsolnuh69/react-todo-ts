@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
@@ -11,7 +11,20 @@ const App: React.FC = () => {
 
   const [todos, setTodos] = useState<ITodo[]>([])
 
+  
+  // получение данных из хранилища
+  useEffect(() => {
+    const saved = JSON.parse(localStorage.getItem('todos') || '[]') as ITodo[]
+
+    setTodos(saved)
+  }, [])
+
+  useEffect(() => {
+    if (todos.length !== 0) localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos])
+
   const addHandler = (title: string) => {
+    
     // prev используется из-за асинхронности, это гарантия того что коллбэк работает с предыдущим state
     setTodos(prev => [
       {
