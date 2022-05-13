@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
             <NavLink to="/react-todo-ts/">Список дел</NavLink>
           </li>
           <li>
-            <NavLink to="/react-todo-ts//about">Информация</NavLink>
+            <NavLink to="/react-todo-ts/about">Информация</NavLink>
           </li>
         </ul>
       </div>
