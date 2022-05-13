@@ -2,7 +2,7 @@
   "name": "react-todo-ts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://podsolnuh69.github.io/react-todo-ts/",
+  "homepage": "https://podsolnuh69.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
