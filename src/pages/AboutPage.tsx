@@ -18,7 +18,7 @@ const AboutPage: React.FC = (props) => {
       <button
         className="btn"
         onClick={() => {
-          history("/");
+          history("/react-todo-ts/");
         }}
       >
         Обратно к списку дел

@@ -9,10 +9,10 @@ const Navbar: React.FC = () => {
         <h4 className="nav-title">ToDo on React + TypeScript</h4>
         <ul className="right hide-on-med-and-down">
           <li>
-            <NavLink to="/">Список дел</NavLink>
+            <NavLink to="/react-todo-ts/">Список дел</NavLink>
           </li>
           <li>
-            <NavLink to="/about">Информация</NavLink>
+            <NavLink to="/react-todo-ts//about">Информация</NavLink>
           </li>
         </ul>
       </div>
